@@ -7,8 +7,8 @@
 </picture>
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/airlock-microgateway)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
-[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certified%20-%20Airlock%20Microgateway-green?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
-[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance%20v1.4.0-Airlock%20Microgateway-green)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/v1.4.0/airlock-microgateway)
+[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-green?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.4.0-green)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/v1.4.0/airlock-microgateway)
 
 *Airlock Microgateway is a Kubernetes native WAAP (Web Application and API Protection) solution to protect microservices.*
 
