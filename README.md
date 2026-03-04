@@ -3,7 +3,7 @@
           srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight_Negative.svg">
   <source media="(prefers-color-scheme: light)"
           srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg">
-  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg"  width="450">
+  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg"  width="400">
 </picture>
 
 [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/airlock-microgateway)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
