@@ -1,15 +1,16 @@
-# Airlock Microgateway
-[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/airlock-microgateway)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
-
-*Airlock Microgateway is a Kubernetes native WAAP (Web Application and API Protection) solution to protect microservices.*
-
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/airlock/microgateway/main/media/Microgateway_Labeled_AlignRight_Negative.svg">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight_Negative.svg">
   <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/airlock/microgateway/main/media/Microgateway_Labeled_AlignRight.svg">
-  <img alt="Microgateway" src="https://raw.githubusercontent.com/airlock/microgateway/main/media/Microgateway_Labeled_AlignRight.svg" align="right" width="250">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg">
+  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg"  width="350">
 </picture>
+
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/airlock-microgateway)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
+[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certified%20-%20Airlock%20Microgateway-green?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance%20v1.4.0-Airlock%20Microgateway-green)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/v1.4.0/airlock-microgateway)
+
+*Airlock Microgateway is a Kubernetes native WAAP (Web Application and API Protection) solution to protect microservices.*
 
 Modern application security is embedded in the development workflow and follows DevSecOps paradigms. Airlock Microgateway is the perfect fit for these requirements. It is a lightweight alternative to the Airlock Gateway appliance, optimized for Kubernetes environments. Airlock Microgateway protects your applications and microservices with the tried-and-tested Airlock security features against attacks, while also providing a high degree of scalability.
 
