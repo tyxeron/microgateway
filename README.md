@@ -1,9 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight_Negative.svg">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_Negative.svg">
   <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg">
-  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_AlignRight.svg"  width="400">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg">
+  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg"  width="400">
 </picture>
 
 [![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-green?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
@@ -26,8 +26,6 @@ For a list of all features, view the **[comparison of the community and premium 
 ## Labs
 We offer a growing number of [Airlock Microgateway labs](https://airlock.instruqt.com/pages/airlock-microgateway-labs) that are designed to be easy-to-follow tutorials. All labs are fully guided and cover aspects of Airlock Microgateway from installation to configuration in a preconfigured cloud-based Kubernetes environment.
 
-[![Airlock Microgateway labs](https://raw.githubusercontent.com/airlock/microgateway/main/media/airlock-microgateway-instruqt-tracks.gif)](https://airlock.instruqt.com/pages/airlock-microgateway-labs)
-
 Learn the basics and expand existing knowledge without any administration effort in a secure environment.
 
 ## Documentation and links
@@ -38,7 +36,6 @@ Check the official documentation at **[docs.airlock.com](https://docs.airlock.co
 * [System Architecture](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000137)
 * [Installation](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138)
 * [Troubleshooting](https://docs.airlock.com/microgateway/latest/index/1659430054787.html)
-* [GitHub](https://github.com/airlock/microgateway)
 
 # Quick start guide
 
