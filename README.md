@@ -1,9 +1,9 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_Negative.svg">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled_Negative.svg" width="400">
   <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg">
-  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg"  width="400">
+          srcset="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg" width="400">
+  <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg" width="400">
 </picture>
 
 [![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-green?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
