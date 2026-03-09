@@ -6,9 +6,12 @@
   <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg" width="400">
 </picture>
 
+[![Release](https://img.shields.io/badge/Release%20-4.0.0-green)](https://github.com/airlock/microgateway/releases/tag/4.0.0)
+[![GitHub](https://img.shields.io/badge/GitHub%20-Published-green?logo=github&logoColor=white)](https://github.com/airlock/microgateway/releases/tag/4.0.0)
 [![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-green?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
 [![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-green?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
-[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.4.0-green?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/v1.4.0/airlock-microgateway)
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-1.4.0-green?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.4.0/airlock-microgateway)
+
 
 *Airlock Microgateway is a Kubernetes native WAAP (Web Application and API Protection) solution to protect microservices.*
 
