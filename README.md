@@ -6,19 +6,18 @@
   <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg" width="400">
 </picture>
 
-[![Release](https://img.shields.io/badge/Release%20-4.0.0-green)](https://github.com/airlock/microgateway/releases/tag/4.0.0)
-[![GitHub](https://img.shields.io/badge/GitHub%20-Published-green?logo=github&logoColor=white)](https://github.com/airlock/microgateway/releases/tag/4.0.0)
+[![Release](https://img.shields.io/badge/Release%20-5.0.0--alpha1-green)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
+[![GitHub](https://img.shields.io/badge/GitHub%20-Published-green?logo=github&logoColor=white)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
 [![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-green?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
 [![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-green?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
-[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-1.4.0-green?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.4.0/airlock-microgateway)
-
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-1.5.0-green?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.5.0/airlock-microgateway)
 
 *Airlock Microgateway is a Kubernetes native WAAP (Web Application and API Protection) solution to protect microservices.*
 
 Modern application security is embedded in the development workflow and follows DevSecOps paradigms. Airlock Microgateway is the perfect fit for these requirements. It is a lightweight alternative to the Airlock Gateway appliance, optimized for Kubernetes environments. Airlock Microgateway protects your applications and microservices with the tried-and-tested Airlock security features against attacks, while also providing a high degree of scalability.
 
 ### Features
-* Kubernetes native integration with sidecar injection and Gateway API support
+* Kubernetes native integration with Gateway API support
 * Reverse proxy functionality with request routing rules, TLS termination and remote IP extraction
 * Using native Envoy HTTP filters like Lua scripting, RBAC, ext_authz, JWT authentication
 * Content security filters for protecting against known attacks (OWASP Top 10)
@@ -40,43 +39,28 @@ Check the official documentation at **[docs.airlock.com](https://docs.airlock.co
 * [Installation](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138)
 * [Troubleshooting](https://docs.airlock.com/microgateway/latest/index/1659430054787.html)
 
+
 # Quick start guide
 
-
-The instructions below provide a quick start guide for Gateway API. Detailed information on the installation are provided in the **[manual](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138)**.
+The instructions below provide a quick start guide. Detailed information on the installation are provided in the **[manual](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138)**.
 
 ## Prerequisites
 * [Airlock Microgateway License](#obtain-airlock-microgateway-license)
-* [cert-manager](https://cert-manager.io/)
 * [Kubernetes Gateway API CRDs](https://gateway-api.sigs.k8s.io/guides/#installing-gateway-api)
 * [helm](https://helm.sh/docs/intro/install/) (>= v3.8.0)
 
-In order to use Airlock Microgateway you need a license and the cert-manager. You may either request a community license free of charge or purchase a premium license.
-For an easy start in non-production environments, you may deploy the same cert-manager we are using internally for testing.
-
 ### Obtain Airlock Microgateway License
 1. Either request a community or premium license
-   * Community license: [airlock.com/microgateway-community](https://airlock.com/en/microgateway-community)
+   * Community license (free): [airlock.com/microgateway-community](https://airlock.com/en/microgateway-community)
    * Premium license: [airlock.com/microgateway-premium](https://airlock.com/en/microgateway-premium)
 2. Check your inbox and save the license file microgateway-license.txt locally.
 
 > See [Community vs. Premium editions in detail](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000056) to choose the right license type.
 
-### Deploy cert-manager
-```console
-helm install cert-manager \
-  oci://quay.io/jetstack/charts/cert-manager \
-  --version 'v1.19.1' \
-  --namespace cert-manager \
-  --create-namespace \
-  --wait \
-  --set crds.enabled=true
-```
-
 ### Deploy Kubernetes Gateway API CRDs
 
 ```console
-kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.4.1/standard-install.yaml
+kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/releases/download/1.5.0/standard-install.yaml
 ```
 
 ## Deploy Airlock Microgateway Operator
@@ -97,11 +81,9 @@ kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/re
     # Install Operator (CRDs are included via the standard Helm 3 mechanism, i.e. Helm will handle initial installation but not upgrades)
     helm install airlock-microgateway \
       oci://quay.io/airlockcharts/microgateway \
-      --version '4.8.4' \
+      --version '5.0.0-alpha1' \
       -n airlock-microgateway-system \
-      --wait \
-      --set operator.sidecarGateway.enabled=false \
-      --set operator.gatewayAPI.enabled=true
+      --wait
     ```
 
 2. Verify that the Operator started successfully:
@@ -111,12 +93,35 @@ kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/re
       --for=condition=Available deployments --all --timeout=3m
     ```
 
+3. Verify the correctness of the installation (Recommended):
+
+    ```console
+    helm upgrade airlock-microgateway \
+      oci://quay.io/airlockcharts/microgateway \
+      --version '5.0.0-alpha1' \
+      -n airlock-microgateway-system \
+      --set tests.enabled=true \
+      --reuse-values
+
+    helm test airlock-microgateway -n airlock-microgateway-system --logs
+
+    helm upgrade airlock-microgateway \
+      oci://quay.io/airlockcharts/microgateway \
+      --version '5.0.0-alpha1' \
+      -n airlock-microgateway-system \
+      --set tests.enabled=false \
+      --reuse-values
+    ```
+
+4. [What's next](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138#Install_What's_next)
+
 ### Upgrading CRDs
 
 The `helm install/upgrade` command currently does not support upgrading CRDs that already exist in the cluster.
 CRDs should instead be manually upgraded before upgrading the Operator itself via the following command:
+
 ```console
-kubectl apply -k https://github.com/airlock/microgateway/deploy/charts/airlock-microgateway/crds/?ref=4.8.4 \
+kubectl apply -k https://github.com/airlock/microgateway/deploy/charts/airlock-microgateway/crds/?ref=12345678 \
   --server-side \
   --force-conflicts
 ```
