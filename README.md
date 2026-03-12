@@ -113,8 +113,6 @@ kubectl apply --server-side -f https://github.com/kubernetes-sigs/gateway-api/re
       --reuse-values
     ```
 
-4. [What's next](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000138#Install_What's_next)
-
 ### Upgrading CRDs
 
 The `helm install/upgrade` command currently does not support upgrading CRDs that already exist in the cluster.
