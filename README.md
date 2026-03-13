@@ -6,17 +6,17 @@
   <img alt="Microgateway" src="https://raw.githubusercontent.com/tyxeron/microgateway/main/media/Microgateway_Labeled.svg" width="400">
 </picture>
 
-[![Release](https://img.shields.io/badge/Release%20-5.0.0-limegreen?style=flat-square)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
-[![GitHub](https://img.shields.io/badge/GitHub%20-Published-limegreen?logo=github&logoColor=white&style=flat-square)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
-[![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-limegreen?logo=artifacthub&logoColor=white&style=flat-square)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
-[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-limegreen?logo=redhatopenshift&style=flat-square)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
-[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.5.0-limegreen?logo=kubernetes&logoColor=white&style=flat-square)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.5.0/airlock-microgateway)
+[![Release](https://img.shields.io/badge/Release%20-5.0.0-42b883?style=flat-square)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
+[![GitHub](https://img.shields.io/badge/GitHub%20-Published-42b883?logo=github&logoColor=white&style=flat-square)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
+[![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-42b883?logo=artifacthub&logoColor=white&style=flat-square)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
+[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-42b883?logo=redhatopenshift&style=flat-square)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.5.0-42b883?logo=kubernetes&logoColor=white&style=flat-square)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.5.0/airlock-microgateway)
 
-[![Release](https://img.shields.io/badge/Release%20-5.0.0-limegreen)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
-[![GitHub](https://img.shields.io/badge/GitHub%20-Published-limegreen?logo=github&logoColor=white)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
-[![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-limegreen?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
-[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-limegreen?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
-[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.5.0-limegreen?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.5.0/airlock-microgateway)
+[![Release](https://img.shields.io/badge/Release%20-5.0.0-42b883)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
+[![GitHub](https://img.shields.io/badge/GitHub%20-Published-42b883?logo=github&logoColor=white)](https://github.com/airlock/microgateway/releases/tag/5.0.0-alpha1)
+[![Artifact Hub](https://img.shields.io/badge/Artifact%20Hub%20-Published-42b883?logo=artifacthub&logoColor=white)](https://artifacthub.io/packages/helm/airlock-microgateway/microgateway)
+[![OpenShift Certified](https://img.shields.io/badge/OpenShift%20Certification%20-Passed-42b883?logo=redhatopenshift)](https://catalog.redhat.com/en/software/container-stacks/detail/67177f927cfedb209761e48f)
+[![Gateway API Conformance](https://img.shields.io/badge/Gateway%20API%20Conformance-v1.5.0-42b883?logo=kubernetes&logoColor=white)](https://github.com/kubernetes-sigs/gateway-api/blob/main/conformance/reports/1.5.0/airlock-microgateway)
 
 
 
