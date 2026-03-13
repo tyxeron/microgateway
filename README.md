@@ -125,6 +125,22 @@ kubectl apply -k https://github.com/airlock/microgateway/deploy/charts/airlock-m
 
 **Note**: Certain GitOps solutions such as e.g. Argo CD or Flux CD have their own mechanisms for automatically upgrading CRDs included with Helm charts.
 
+
+## What’s next
+After installing the Airlock Microgateway Operator, the next steps describe how to deploy and configure a Gateway in your cluster and how to implement common scenarios.
+
+* [Gateway deployment](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000147)
+
+    Deploy the gateway either as an Ingress or as an in-cluster Gateway.
+
+* [Session handling](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000148)
+
+    Enable session handling to persist session information. This is required for authentication scenarios and also improves filtering scenarios by making it possible to correlate requests.
+
+* [Use cases](https://docs.airlock.com/microgateway/latest/?topic=MGW-00000146)
+
+    Learn how to use Airlock Microgateway for other typical scenarios such as request routing, request filtering or authentication enforcement.
+
 ## Support
 
 ### Premium support
